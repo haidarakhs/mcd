@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: 0;
+    scroll-behavior: smooth;
+    font-family: 'poopins' , sans-serif;
+}
+:root{
+    --bg-color:#fff;
+    --second-bg-color:#777d89;
+    --text-color:#000;
+    --main-color:#ff0000;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+section{
+    min-height: 10vh;
+    padding: 10rem 9% 9em;
+}
+body{
+    background: var(--bg-color);
+    color: var(--text-color);
+
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 9%;
+    background: var(--bg-color);
+    display: flex;
+   justify-content: center;
+    align-items: center;
+    z-index: 100;
+   
+
+}
+.logo{
+    height: 1rem;
+    width: 1rem;
+
+}
+
+ 
+.navbar a{
+    font-size: 1.7rem;
+    color: var(--text-color);
+    margin-left: 4rem;
+    
+}
+
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+   margin-top: 40px;
+  
+
+  }
+  
+  .mySlides {
+    display: none;
+  }
+  
+  img {
+    width: 200%;
+  }
+  
+  .fade {
+    animation: fade 1.5s ease-in-out infinite;
+  }
+  
+  @keyframes fade {
+    from {
+      opacity: 0.4;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+
+  
+  .service h1{
+    margin-bottom: 5rem;
+    font-size: 40px;
+    text-align: center;
+    }
+    .service-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       cursor: pointer;
+    }
+    .service-container .service-box{
+        flex: 1 1 30rem;
+        background: var(--bg-color);
+        padding: 3rem 2rem 4rem;
+        border-radius: 2rem;
+        text-align: center;
+      
+        transition: .5s ease;
+    }
+    .service-container .service-box:hover{
+    border-color: var(--text-color);
+    transform: scale(1.02);
+    }
+   
+    .service-box p{
+        font-size: 1.6rem;
+        margin: 1rem 0 3rem;
+        margin-top: 3rem;
+    }
+   
+    .img-education{
+        width: 200px;
+    }
+
+    .myButton {
+        font-weight: bold;
+        padding: 15px 50px ;
+        font-size: 20px;
+        cursor: pointer;
+        color: #fff;
+        background: rgb(193, 23, 23);
+        border-radius: 10px;
+        text-align: center;
+        margin-left: 580px;
+      }
+      
+      @media(max-width:1560px){
+        .warning{
+          display: none;
+        }
+      }
+      @media (max-width: 414px) {
+        .warning{
+            display: flex;
+            text-align: center;
+        }
+        main{
+            display: none;
+        }
+    }
